@@ -120,6 +120,7 @@ li {
     align-items: center;
     font-size: 14px;
     height: 36px;
+    overflow: hidden;
 }
 
 li span {
@@ -139,7 +140,9 @@ li div {
     align-items: center;
 }
 li:hover div {
-    opacity: 1;
+   opacity: 1;
+    background: #f9f9f9;
+    box-shadow: 6px 0px 5px #f9f9f9;
 }
 li div button {
     width: 38px;
@@ -214,13 +217,15 @@ body .search icon {
 }
 
 .setting {
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    padding: 0 8px;
 }
 .setting button {
     width: 35px;
+    margin: 0;
 }
 .setting h1,h2,h3 {
     margin: 0;
