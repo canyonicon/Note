@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Notes",
+  "version": "2.0",
+  "description": "أضف ملاحظاتك، عدلها، ابحث فيها، وثبتها!",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Image/logo.png"
+    }
+  },
+  "icons": {
+    "16": "Image/logo.png"
+  }
+}

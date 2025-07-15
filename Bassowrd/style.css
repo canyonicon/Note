@@ -1,0 +1,234 @@
+body {
+    font-family: sans-serif;
+    padding: 15px;
+    font-size: 14px;
+    text-align: right;
+    font-weight: 400;
+    width: 300px;
+    user-select: none;
+    color: #495261;
+    transition: ease 0.2s;
+}
+
+svg {
+    color: #404650;
+}
+
+icon {
+    display: flex;
+    background-size: cover;
+}
+
+img {
+    animation: oli 0.3s ease forwards;
+    user-select: none;
+    display: block;
+    -webkit-user-drag: none;
+}
+
+.Wave-cloud {
+position: relative;
+overflow: hidden;
+}
+.ripple {
+  position: absolute; border-radius: 50%;
+  background: rgba(122, 122, 122, 0.116);
+  pointer-events: none;
+  transform: scale(0);
+  opacity: 1;
+  transition: transform 0.4s ease-out;
+}
+.ripple.expand {
+  transform: scale(4);
+}
+.ripple.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+textarea, input[type="text"], input[type="number"], input[type="email"] {
+    font-family: sans-serif;
+    transition: ease 0.2s;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: solid 1px #797979;
+  background: #0000;
+  resize: none;
+  direction: rtl;
+}
+textarea:focus , input[type="text"]:focus , input[type="number"]:focus, input[type="email"]:focus {
+    border-color: #158eff;
+    outline: none;
+    box-shadow: 0 0 0 3px #adceffb0;
+}
+
+button {
+    padding: 5px 8px;
+    font-family: sans-serif;
+    margin: 2px 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 25px;
+    height: 35px;
+    border: solid 1px #5e718a3f;
+    padding: 0 15px;
+    background: #0000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+button svg {
+    width: 18px;
+    height: 18px;
+    opacity: .8;
+}
+
+hr {
+    margin: 15px 0;
+    border: none;
+    height: 1px;
+    background: #909daf6e;
+}
+
+.zx {
+    margin: 10px 0;
+    display: block;
+    margin-top: 0;
+    direction: rtl;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+
+li {
+    background: #f9f9f9;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 5px 16px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 36px;
+}
+
+li span {
+  flex: 1;
+  margin-left: 10px;
+  word-break: break-word;
+}
+li div {
+    position: absolute;
+    transition: ease 0.3s;
+    left: 0;
+    margin: 5px 1px;
+    z-index: 5;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li:hover div {
+    opacity: 1;
+}
+li div button {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+}
+li div button:hover {
+    background: #0000000e;
+}
+li div button:active {
+    background: #0000001c;
+}
+
+#exportBtn, #saveBtn {
+    transition: ease 0.3s;
+    background: #158eff;
+    color: #fff;
+    border-color: #0000;
+}
+#exportBtn:active, #saveBtn:active {
+    transform: scale(0.97);
+    opacity: .8;
+    transition: ease 0.0s;
+}
+#exportBtn svg, #importBtn svg {
+    margin-right: 6px;
+}
+#saveBtn svg, #exportBtn svg {
+    margin-right: 6px;
+    color: #fff;
+}
+
+body .search {
+    transition: ease 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 25px;
+    background: #edf2fa;
+    border: solid 1px #0000;
+}
+body .search:focus-within {
+    background: white;
+    border-color: #158eff;
+    outline: none;
+    box-shadow: 0 0 0 3px #adceffb0;
+}
+body .search input {
+    margin: 0;
+    padding-right: 32px;
+    border: none;
+}
+body .search input:focus {
+    border-color: #0000;
+    outline: none;
+    box-shadow: none;
+}
+body .search .ionicon {
+    height: 16px;
+    width: 16px;
+}
+body .search icon {
+    right: 10px;
+    position: absolute;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.setting button {
+    width: 35px;
+}
+.setting h1,h2,h3 {
+    margin: 0;
+}
+.login button {
+    border-color: #0000;
+}
+.login button svg {
+    width: 23px;
+    height: 24px;
+}
